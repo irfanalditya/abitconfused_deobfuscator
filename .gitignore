@@ -1,0 +1,9 @@
+*~
+.vs/
+bin/
+obj/
+Release/
+Debug/
+publish-netcoreapp*/
+launchSettings.json
+*.user
