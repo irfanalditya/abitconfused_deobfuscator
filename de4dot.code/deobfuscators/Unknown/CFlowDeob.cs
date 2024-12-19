@@ -16,7 +16,8 @@ namespace de4dot.code.deobfuscators.Unknown {
 			this.module = module;
 		}
 		public void Deob() {
-			byte[] data = File.ReadAllBytes(@"E:\CTF\drweb2024\3\stringresource.dat");
+			byte[] data = Encoding.UTF8.GetBytes(Resource1.stringresource); // Get this from the dump of `<Module>.Z2V0X1N0YXRlRGVsZXRlR3JvdXA=` during runtime.
+
 			intfields = GetFieldsDictionary();
 			if (intfields.Count == 0)
 				return;
